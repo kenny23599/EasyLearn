@@ -1,0 +1,507 @@
+/* LearningPath Simple Styles */
+.learningpath-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+/* Header */
+.path-header {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--slate-200);
+  margin-bottom: 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.header-content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  margin-bottom: 0.5rem;
+}
+
+.header-content p {
+  color: var(--slate-600);
+}
+
+.path-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--slate-500);
+}
+
+/* Progress Section */
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--slate-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  font-size: 0.875rem;
+  color: var(--slate-600);
+  text-align: center;
+}
+
+.learningpath-container {
+          padding: 20px;
+          max-width: 1500px;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        .path-header {
+          margin-bottom: 40px;
+        }
+
+        .header-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .path-header h1 {
+          font-size: 2.5rem;
+          margin-bottom: 8px;
+          color: #1f2937;
+        }
+
+        .path-header p {
+          font-size: 1.1rem;
+          color: #6b7280;
+        }
+
+        .create-button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 20px;
+          background: #3b82f6;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        .create-button:hover {
+          background: #2563eb;
+        }
+
+        .form-modal {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+          padding: 20px;
+        }
+
+        .form-card {
+          background: white;
+          border-radius: 12px;
+          padding: 24px;
+          width: 100%;
+          max-width: 500px;
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 24px;
+        }
+
+        .form-header h3 {
+          font-size: 1.5rem;
+          color: #1f2937;
+        }
+
+        .close-button {
+          background: none;
+          border: none;
+          color: #6b7280;
+          cursor: pointer;
+          padding: 4px;
+        }
+
+        .form-content {
+          margin-bottom: 24px;
+        }
+
+        .form-group {
+          margin-bottom: 16px;
+        }
+
+        .form-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 12px;
+        }
+
+        .form-group label {
+          display: block;
+          margin-bottom: 6px;
+          font-weight: 600;
+          color: #374151;
+        }
+
+        .form-group input,
+        .form-group select {
+          width: 100%;
+          padding: 10px 12px;
+          border: 1px solid #d1d5db;
+          border-radius: 6px;
+          font-size: 14px;
+        }
+
+        .form-actions {
+          display: flex;
+          gap: 12px;
+          justify-content: flex-end;
+        }
+
+        .cancel-button {
+          padding: 10px 20px;
+          background: #f3f4f6;
+          color: #374151;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+
+        .save-button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 20px;
+          background: #10b981;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+
+        .plans-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+          gap: 24px;
+        }
+
+        .plan-card {
+          background: white;
+          border-radius: 12px;
+          padding: 24px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          border: 1px solid #e5e7eb;
+          transition: all 0.3s ease;
+        
+        }
+
+        .plan-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan-header {
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          margin-bottom: 20px;
+        }
+
+        .plan-icon {
+          flex-shrink: 0;
+        }
+
+        .plan-info {
+          flex: 1;
+        }
+
+        .plan-info h3 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #1f2937;
+          margin-bottom: 4px;
+          font-display: auto;
+        }
+
+        .plan-info p {
+          color: #6b7280;
+          font-size: 0.9rem;
+        }
+
+        .plan-actions {
+          display: flex;
+          gap: 8px;
+        }
+
+        .icon-button {
+          background: none;
+          border: none;
+          padding: 6px;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+
+        .icon-button.edit {
+          color: #13b147;
+          background: white;
+        }
+
+        .icon-button.edit:hover {
+          background: #fef2f2;
+        }
+
+        .icon-button.delete {
+          color: #ef4444;
+          background: white;
+        }
+
+        .icon-button.delete:hover {
+          background: #fef2f2;
+        }
+
+        .progress-section {
+          margin-bottom: 20px;
+        }
+
+        .progress-bar {
+          width: 100%;
+          height: 8px;
+          background: #f3f4f6;
+          border-radius: 4px;
+          overflow: hidden;
+          margin-bottom: 8px;
+        }
+
+        .progress-fill {
+          height: 100%;
+          background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+          border-radius: 4px;
+          transition: width 0.3s ease;
+        }
+
+        .progress-text {
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.875rem;
+          color: #6b7280;
+        }
+
+        .plan-details {
+          margin-bottom: 20px;
+        }
+
+        .detail-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-bottom: 8px;
+          font-size: 0.875rem;
+          color: #4b5563;
+        }
+
+        .action-buttonL {
+          width: 100%;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .action-buttonL.start {
+          background: #3b82f6;
+          color: white;
+        }
+
+        .action-buttonL.start:hover {
+          background: #2563eb;
+        }
+
+        .action-buttonL.in-progress {
+          background: #f59e0b;
+          color: white;
+        }
+
+        .action-buttonL.in-progress:hover {
+          background: #d97706;
+        }
+
+        .action-buttonL.completed {
+          background: #10b981;
+          color: white;
+          cursor: not-allowed;
+        }
+
+        .loading-state, .error-state, .empty-state {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 80px 20px;
+          text-align: center;
+        }
+
+        .loading-state h3, .error-state h3, .empty-state h3 {
+          margin: 16px 0 8px;
+          color: #667386;
+        }
+
+        .loading-state p, .error-state p, .empty-state p {
+          color: #6b7280;
+          margin-bottom: 20px;
+        }
+        .loading-spinner {
+          width: 40px;
+          height: 40px;
+          border: 4px solid #3b82f6;
+          border-top: 4px solid white;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+          margin-bottom: 16px;
+        }
+
+        .retry-button, .upload-materials-button {
+          padding: 12px 24px;
+          background: #3b82f6;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: 600;
+        }
+
+        .retry-button:hover, .upload-materials-button:hover {
+          background: #2563eb;
+        }
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .learningpath-container {
+    padding: 0.75rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .path-stats {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .day-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .start-day-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .path-header,
+  .days-navigation,
+  .day-details {
+    padding: 1rem;
+  }
+
+         .plans-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+          gap: 24px;
+        }
+}
+
+@media (max-width: 468px) {
+  .learningpath-container {
+    padding: 0.75rem;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .path-stats {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .day-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .start-day-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .path-header,
+  .days-navigation,
+  .day-details {
+    padding: 1rem;
+  }
+         .plans-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+          gap: 24px;
+        }
+}

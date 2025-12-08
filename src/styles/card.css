@@ -1,0 +1,162 @@
+/* Card Base */
+.card {
+  background: var(--white);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--slate-200);
+}
+
+.card.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-header {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-footer {
+  padding: 0 1.5rem 1.5rem;
+}
+
+/* Stat Cards */
+.stat-card {
+  padding: 1.5rem;
+  border-radius: var(--radius-2xl);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+.stat-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stat-value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  color: var(--slate-600);
+  margin-bottom: 0.5rem;
+}
+
+.stat-change {
+  font-size: 0.875rem;
+  color: var(--slate-500);
+}
+
+/* Activity Cards */
+.activity-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: var(--radius-xl);
+  transition: background-color 0.2s ease;
+}
+
+.activity-item:hover {
+  background: var(--slate-50);
+}
+
+.activity-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--light-blue);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-title {
+  font-weight: 500;
+  color: var(--slate-800);
+}
+
+.activity-description {
+  font-size: 0.875rem;
+  color: var(--slate-500);
+}
+
+/* Session Cards */
+.session-card {
+  padding: 1.5rem;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-xl);
+  transition: all 0.3s ease;
+}
+
+.session-card:hover {
+  border-color: var(--secondary-blue);
+  transform: translateY(-1px);
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.session-title {
+  font-weight: 600;
+  color: var(--slate-800);
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.session-time {
+  font-size: 0.875rem;
+  color: var(--slate-500);
+}
+
+.session-type {
+  padding: 0.25rem 0.5rem;
+  background: var(--light-blue);
+  color: var(--primary-blue);
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Progress Bars */
+.progress-container {
+  width: 100%;
+  background: var(--slate-200);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 0.5rem;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  border-radius: 0.75rem;
+  transition: width 0.5s ease;
+}
+
+.progress-bar-lg {
+  height: 0.75rem;
+}
